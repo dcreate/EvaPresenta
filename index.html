@@ -34,8 +34,8 @@
     <![endif]-->
 
 </head>
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-	<bgsound src="images/bluey.mp3" autoplay></bgsound>
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" onclick="PlayAudio()">
+	<audio id="musica" src="images/bluey.mp3" loop></audio>
 	
 	<!-- LOADER -->
     <div id="preloader">
@@ -491,10 +491,13 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
-       <audio controls autoplay src="images/bluey.mp3" preload>
-         Tu navegador no soporta la etiqueta de audio.
-       </audio>
+
 	<!-- ALL JS FILES -->
+	<script>
+		function PlayAudio(){
+			document.getElementBy.Id("musica").play();
+		}
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
