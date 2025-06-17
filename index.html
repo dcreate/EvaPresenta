@@ -34,7 +34,7 @@
     <![endif]-->
 
 </head>
-<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" onload="PlayAudio()">
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98" >
 	<audio id="musica" src="images/bluey.mp3" loop></audio>
 	
 	<!-- LOADER -->
@@ -494,7 +494,8 @@
 
 	<!-- ALL JS FILES -->
 	<script>
-		function PlayAudio(){
+		window.onload = function (){
+        //tu función
 			document.getElementById("musica").play();
 		}
 	</script>
